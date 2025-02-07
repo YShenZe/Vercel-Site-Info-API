@@ -1,4 +1,4 @@
-# Site Info API
+# Vercel Site Info API
 
 轻量级网站信息获取接口服务，可快速部署至Vercel平台
 
@@ -14,7 +14,7 @@
 ### Vercel 部署指南
 
 1. **Fork仓库**  
-   [点击fork按钮](https://github.com/YShenZe/site-info-api/fork) 将此项目复制到你的账户
+   [点击fork按钮](https://github.com/YShenZe/vercel-site-info-api/fork) 将此项目复制到你的账户
 
 2. **创建Vercel项目**  
    [前往Vercel控制台](https://vercel.com/new) 导入fork后的仓库
@@ -57,4 +57,4 @@ api: https://your-api-domain.com/api/v1/?url=${href}
 
 ---
 
-> 项目基于MIT协议开源，欢迎提交PR改进项目 [查看源码](https://github.com/YShenZe/site-info-api)
+> 项目基于MIT协议开源，欢迎提交PR改进项目 [查看源码](https://github.com/YShenZe/vercel-site-info-api)
