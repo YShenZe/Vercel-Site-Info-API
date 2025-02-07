@@ -22,9 +22,9 @@
 3. **配置环境变量**  
    在项目设置 > Environment Variables 添加：
 
-   | 变量名 | 示例值 | 说明 |
-   |-------|--------|-----|
-   | HOSTS | `['', 'localhost', 'yourdomain.com']` | 允许访问的域名列表 |
+   | 变量名 | 示例值 |
+   |-------|--------|
+   | HOSTS | `['', 'localhost', 'yourdomain.com']` |
 
 > [!TIP]
 > - 空值(`''`)允许直接访问  
