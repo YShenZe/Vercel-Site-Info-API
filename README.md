@@ -1,24 +1,56 @@
-# site-info-api
+```markdown
+# Site Info API
 
-使用方法示例：
+轻量级网站信息获取接口服务，可快速部署至Vercel平台
 
-https://api.info.mengze2.cn/api/v1/?url=https://mengze2.cn/
+## 功能特性
 
-如果需要配置到 Stellar 主题中，写法就是：
+- 实时获取网站基础信息
+- 简易API调用方式
+- Vercel一键部署
+- 多域名安全校验
 
-```yaml
-api: https://api.info.mengze2.cn/api/v1/?url=${href}
+## 快速部署
+
+### Vercel 部署指南
+
+1. **Fork仓库**  
+   [点击fork按钮](https://github.com/YShenZe/site-info-api/fork) 将此项目复制到你的账户
+
+2. **创建Vercel项目**  
+   [前往Vercel控制台](https://vercel.com/new) 导入fork后的仓库
+
+3. **配置环境变量**  
+   在项目设置 > Environment Variables 添加：
+
+   | 变量名 | 示例值 | 说明 |
+   |-------|--------|-----|
+   | HOSTS | `['', 'localhost', 'yourdomain.com']` | 允许访问的域名列表 |
+
+
+## 使用方法
+
+### API调用示例
+
+```bash
+GET https://your-api-domain.com/api/v1/?url=https://example.com
 ```
 
-## 支持 Vercel 部署
+### Stellar主题集成
 
-1. fork 本仓库
-2. 打开 vercel.com，部署该项目
-3. 进入 Environment Variables 页面，设置 HOSTS 如下：
+在主题配置文件中添加：
 
-| Key | Value |
-| :-- | :-- |
-| HOSTS | `['', 'localhost', 'mengze2.cn']` |
+```yaml
+api: https://your-api-domain.com/api/v1/?url=${href}
+```
 
-> 把示例中的最后一个修改为自己网站的 host 部分。
-> 前两个分别代表空 Referrer、本地预览，可以根据需要选择是否保留。
+## 注意事项
+
+- 生产环境建议移除`localhost`配置
+- 多个域名请用英文逗号分隔
+- API响应包含CORS头信息，支持跨域调用
+- 默认无请求频率限制，如需限制可在Vercel配置速率规则
+
+---
+
+> 项目基于MIT协议开源，欢迎提交PR改进项目 [查看源码](https://github.com/YShenZe/site-info-api)
