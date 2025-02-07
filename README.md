@@ -1,4 +1,3 @@
-```markdown
 # Site Info API
 
 轻量级网站信息获取接口服务，可快速部署至Vercel平台
